@@ -13,15 +13,13 @@ class About extends React.Component {
             We are based within the city of San Diego, CA where our many customers can enjoy both online and in store shopping to find whatever they need.
           </section>
           <h3>Guide:</h3>
-          <section>
             <ol>
                 <li>Create an account using the sign up button located in the top right</li>
-                <li>Log in to your account</li>
+                <li>Login to your account</li>
                 <li>Explore our many items</li>
                 <li>Click the "Add to Cart" button located below each item</li>
                 <li>Once you have everything you need click "Check Out" to review your cart before payment</li>
             </ol>
-          </section>
         </main>
       </div>
     )

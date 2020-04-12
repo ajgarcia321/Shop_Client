@@ -1,6 +1,5 @@
 import React from 'react'
 // import './App.css'
-import data from '../data.js'
 import Shopitem from './Shopitem.js'
 
 
@@ -8,7 +7,7 @@ class Menu extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      items: []
+      shopitems: []
     }
   }
   componentDidMount () {
