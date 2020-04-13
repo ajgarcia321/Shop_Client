@@ -24,31 +24,30 @@ export default class LogIn extends React.Component {
     }
   }
 
+
+
   handleChange = (event) => {
     this.setState({ [event.target.id]: event.target.value})
   }
-
-  redmer(){
-      return(
-        <div>
-            <div style={formDivStyle}>
-            <h1>Log In</h1>
-            <form class="ui form" onSubmit={handleSubmit}>
-                <div class="field">
-                    <label>Username</label>
-                    <input value={username} onChange={handleChange} type="username" placeholder="username"/>
-                </div>
-                <div class="field">
-                    <label>Password</label>
-                    <input value={password} onChange={handleChange} type="password" placeholder="password"/>
-                </div>
-
-                <button class="ui button" type="submit">Submit</button>
-            </form>
-        </div>
-        </div>
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Username
+            <div>
+            <input onChange={this.handleChange} id="username" type="text"  />
+            </div>
+          </label>
+          <label>
+            Password
+            <div>
+            <input onChange={this.handleChange} id="password"  type="password" />
+            </div>
+          </label>
+          <button type="submit">Log In</button>
+        </form>
+      </div>
     )
+  }
 }
-}
-
-export default LoginForm

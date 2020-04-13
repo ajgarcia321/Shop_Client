@@ -20,7 +20,7 @@ export default class NewUser extends React.Component {
 
   }
   handleChange = (event) => {
-    this.setState({[event.target.id]: event.target.value})
+    this.setState({ [event.target.id]: event.target.value})
   }
   render() {
     return (
@@ -32,15 +32,15 @@ export default class NewUser extends React.Component {
           <input onChange={this.handleChange} id="username" type="text"  />
           </div>
         </label>
-
         <label>
           Password
           <div>
           <input onChange={this.handleChange} id="password"  type="password"  />
           </div>
         </label>
-        <button type="submit">Create Account</button>
+        <button type="submit">Add me</button>
         </form>
       </div>
     )
   }
+}
